@@ -1,0 +1,85 @@
+body{
+    background-image: url(./img/hand-drawn-design-heart-collection/4254391.jpg);
+    text-align: center;
+    background-attachment: fixed;
+    background-position: center;2
+    font-family: sans-serif;
+}
+
+#website-areas *{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+#website-areas{
+    display: grid;
+    width: 75%;
+    margin: 0 auto;
+    height: 100vh;
+    border: solid 2px black;
+    grid-template-rows: 150px 70px 1fr 70px;
+    grid-template-areas: 
+                    "cabecera cabecera cabecera cabecera cabecera"
+                    "menu menu menu menu menu"
+                    "contenido contenido contenido contenido contenido"
+                    "lateral lateral lateral lateral lateral"
+                    "pie pie pie pie pie";
+}
+
+#cabecera {
+    grid-area: cabecera;
+    display: flex;
+    background-color: #ffffff;
+    border: solid 2px rgb(255, 0, 0);
+
+    justify-content: center;
+    align-items: center;
+}
+
+#menu {
+    grid-area: menu;
+    background-color: #57ffa8;
+    border: solid 2px rgb(0, 26, 255);
+
+    line-height: 25px;
+   
+}
+
+#menu ul{
+    
+    display: grid;
+
+    list-style: none;
+}
+
+#contenido {
+    grid-area: contenido;
+    border: solid 2px rgb(16, 68, 40);
+    display: grid;
+
+    gap: 20px;
+    padding: 25px;
+}
+
+
+#contenido article{
+    background-color: #4088ee;
+    border: solid 2px rgb(255, 0, 195);
+}
+
+#lateral {
+    grid-area: lateral;
+
+    background-color: #f5f5f5;
+    border: solid 2px rgb(255, 0, 0);
+}
+
+#pie-pagina {
+    grid-area: pie;
+    background-color: #000000;
+    color: aliceblue;
+    border: solid 2px rgb(86, 86, 86);
+   
+
+}

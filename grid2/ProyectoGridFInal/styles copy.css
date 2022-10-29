@@ -1,0 +1,183 @@
+body{
+    background-image: url(./img/hand-drawn-design-heart-collection/4254391.jpg);
+    text-align: center;
+    background-attachment: fixed;
+    background-position: center;
+    font-family: sans-serif;
+}
+
+/* segunda caja con areas ya no con fracciones  */
+
+
+
+
+
+
+#website-areas *{
+    margin: 0%;
+    padding: 0%;
+
+    }
+
+    #website-areas{
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: 150px 70px 1fr 70px;
+       grid-template-areas: 
+       "cabecera cabecera cabecera cabecera cabecera "
+       "menu menu menu menu menu"
+       "contenido contenido contenido contenido lateral"
+       "pie pie pie pie pie";
+       gap: 20px;
+        width: 100%;
+        height: 1000px;
+        margin: 0 auto;
+        border: 1px solid black;
+    }
+
+    #website-areas #cabecera{
+        grid-area: cabecera;
+        display: flex;
+    justify-content: center;
+    align-items: center;
+
+        background: rgb(0, 17, 255);
+        color: rgb(255, 255, 255);
+    }
+
+    #website-areas #menu{
+        grid-area: menu;
+        display: grid;
+        background: lightblue;
+        color:black;
+        line-height: 70px;
+    }
+
+    #website-areas #menu ul{
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        list-style: none;
+    }
+    #website-areas #contenido{
+grid-area: contenido;
+        
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 25px;
+        padding: 20px;
+        background: rgb(98, 98, 98);
+    }
+
+
+    #website-areas #contenido article{
+
+        background: rgb(58, 58, 58);
+        border: 1px solid black;
+    }
+
+    #website-areas #lateral{
+        grid-area: lateral;
+       
+        background: rgb(255, 157, 0);
+        color: white;
+    }
+
+
+    #website-areas #pie-pagina{
+        grid-area: pie;
+        background: rgb(0, 0, 0);
+        color: rgb(255, 255, 255);
+
+
+    }
+
+
+
+
+
+
+/* FIn de la segunda pagina */
+
+
+
+
+
+
+
+
+
+
+/* comienza la primer pagina pagina de respaldo del css  */
+
+#website *{
+margin: 0%;
+padding: 0%;
+
+}
+
+#website{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 150px 70px 1fr 70px;
+    align-items: ;
+    width: 75%;
+    height: 1000px;
+    margin: 0 auto;
+    border: 1px solid black;
+}
+
+#website #cabecera{
+    display: flex;
+justify-content: center;
+align-items: center;
+
+    grid-column: 1 / 6;
+    background: rgb(0, 17, 255);
+    color: rgb(255, 255, 255);
+}
+
+#website #menu{
+    display: grid;
+    grid-column: 1 /  6;
+    background: lightblue;
+    color:black;
+    line-height: 70px;
+}
+
+#website #menu ul{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    list-style: none;
+}
+#website #contenido{
+    grid-column: 1 / 5;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    padding: 20px;
+    background: rgb(98, 98, 98);
+}
+
+
+#website #contenido article{
+
+    background: rgb(58, 58, 58);
+    border: 1px solid black;
+}
+
+#website #lateral{
+    grid-column: 5 / 6;
+    background: rgb(255, 157, 0);
+    color: white;
+}
+
+
+#website #pie-pagina{
+    grid-column: 1/6;
+    background: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+
+
+}
+
+/* termina la primer pagina  */

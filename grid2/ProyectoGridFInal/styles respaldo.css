@@ -1,0 +1,81 @@
+body{
+    background-image: url(./img/hand-drawn-design-heart-collection/4254391.jpg);
+    text-align: center;
+    background-attachment: fixed;
+    background-position: center;
+    font-family: sans-serif;
+}
+/* comienza la primer pagina  a */
+
+#website *{
+margin: 0%;
+padding: 0%;
+
+}
+
+#website{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 150px 70px 1fr 70px;
+    align-items: ;
+    width: 75%;
+    height: 1000px;
+    margin: 0 auto;
+    border: 1px solid black;
+}
+
+#cabecera{
+    display: flex;
+justify-content: center;
+align-items: center;
+    
+    grid-column: 1 / 6;
+    background: rgb(0, 17, 255);
+    color: rgb(255, 255, 255);
+}
+
+#menu{
+    display: grid;
+    grid-column: 1 /  6;
+    background: lightblue;
+    color:black;
+    line-height: 70px;
+}
+
+#menu ul{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    list-style: none;
+}
+#contenido{
+    grid-column: 1 / 5;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    padding: 20px;
+    background: rgb(98, 98, 98);
+}
+
+
+#contenido article{
+
+    background: rgb(58, 58, 58);
+    border: 1px solid black;
+}
+
+#lateral{
+    grid-column: 5 / 6;
+    background: rgb(255, 157, 0);
+    color: white;
+}
+
+
+#pie-pagina{
+    grid-column: 1/6;
+    background: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+
+
+}
+
+/* termina la primer pagina  */

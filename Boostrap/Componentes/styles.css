@@ -1,0 +1,40 @@
+#menu {
+    height: 100px;
+}
+
+
+#menu ul{
+text-decoration: none;
+list-style: none;
+line-height: 100px;
+
+}
+
+
+.item {
+    height:150px;
+    
+} 
+
+footer {
+
+    height: 50px;
+    line-height: 50px;
+}
+
+.lateral{
+
+height: 550px;
+background-color: rgba(255, 0, 204, 0.339);
+}
+
+.lateral > div {
+
+  height: calc(550px / 3);
+}
+
+.link2 {
+    text-decoration: none;
+    text-shadow: 10px;
+    color: blueviolet;
+}
